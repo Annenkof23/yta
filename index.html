@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Баланс</h3>
+                <p id="balance">— ₽</p>
+            </div>
+            <div class="stat-card">
+                <h3>Ожидаемый доход</h3>
+                <p id="expected-income">— ₽</p>
+            </div>
+            <div class="stat-card">
+                <h3>Приглашено человек</h3>
+                <p id="invited-count">—</p>
+            </div>
+        </div>
+
+        <div class="invite-section">
+            <h3>Ссылка для приглашения</h3>
+            <div style="display: flex; width: 100%; max-width: 420px; align-items: center;">
+                <input type="text" id="invite-link" value="Загрузка..." readonly>
+                <button class="copy-btn" id="copy-invite">Скопировать</button>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h3>Приглашённые пользователи</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Имя</th>
+                            <th>Статус</th>
+                            <th>Телефон</th>
+                            <th>Осталось дней</th>
+                        </tr>
+                    </thead>
+                    <tbody id="referrals-table">
+                        <!-- Данные будут добавлены через script.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
