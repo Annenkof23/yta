@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const incomeUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!E2?key=${apiKey}`;
     const invitedUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!F2?key=${apiKey}`;
     const inviteLinkUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!C3:F3?key=${apiKey}`;
-    const referralsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!A6:D?key=${apiKey}`;
+    const referralsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!A6:E?key=${apiKey}`;
 
     console.log("Загружаем данные из Google Sheets...");
 
@@ -106,14 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
             if (row.length >= 4) {
                 const name = row[0] || "";
                 const status = row[1] || "";
-                const phone = row[2] || "";
                 const daysLeft = row[3] || "";
+                const completedTasks = row[4] || ""; // Данные из столбца E
 
                 const tr = document.createElement("tr");
                 tr.innerHTML = `
                     <td data-label="Имя">${name}</td>
                     <td data-label="Статус">${status}</td>
-                    <td data-label="Телефон">${phone}</td>
+                    <td data-label="Выполнено зз">${completedTasks}</td>
                     <td data-label="Осталось дней">${daysLeft}</td>
                 `;
                 tableBody.appendChild(tr);
