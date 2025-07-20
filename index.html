@@ -10,17 +10,23 @@
     <div class="container">
         <h1>Личный кабинет</h1>
 
+        <div class="main-links">
+            <a href="tariffs.html" class="tariff-link">Тарифы</a>
+            <a href="history.html" class="tariff-link">История выплат</a>
+            <a href="notifications.html" class="tariff-link">Уведомления</a>
+        </div>
+
         <div class="stats">
             <div class="stat-card">
-                <h3><span style="font-size:1.2em;vertical-align:middle;">💰</span><br>Баланс</h3>
+                <h3><span class="icon icon-balance"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#0071e3" stroke-width="2"/><path d="M8 15c0 1.104.896 2 2 2h4a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-2a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2" stroke="#0071e3" stroke-width="1.5" stroke-linecap="round"/></svg></span><br>Баланс</h3>
                 <p id="balance">— ₽</p>
             </div>
             <div class="stat-card">
-                <h3><span style="font-size:1.2em;vertical-align:middle;">📈</span><br>Ожидаемый доход</h3>
+                <h3><span class="icon icon-income"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#34c759" stroke-width="2"/><path d="M8 13l3 3 5-5" stroke="#34c759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><br>Ожидаемый доход</h3>
                 <p id="expected-income">— ₽</p>
             </div>
             <div class="stat-card">
-                <h3><span style="font-size:1.2em;vertical-align:middle;">👥</span><br>Приглашено человек</h3>
+                <h3><span class="icon icon-invited"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#ff9500" stroke-width="2"/><path d="M12 13c2.21 0 4-1.343 4-3s-1.79-3-4-3-4 1.343-4 3 1.79 3 4 3zm0 2c-2.67 0-8 1.34-8 4v1h16v-1c0-2.66-5.33-4-8-4z" stroke="#ff9500" stroke-width="1.5"/></svg></span><br>Приглашено человек</h3>
                 <p id="invited-count">—</p>
             </div>
         </div>
@@ -46,6 +52,24 @@
                         </tr>
                     </thead>
                     <tbody id="referrals-table">
+                        <!-- Данные будут добавлены через script.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h3>Ожидают выплаты</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Имя</th>
+                            <th>Статус</th>
+                            <th>Выплаты</th>
+                        </tr>
+                    </thead>
+                    <tbody id="applications-table">
                         <!-- Данные будут добавлены через script.js -->
                     </tbody>
                 </table>

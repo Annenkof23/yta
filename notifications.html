@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оповещения и акции</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Оповещения и акции</h1>
+
+        <div class="main-links">
+            <a href="index.html" class="tariff-link">Главная</a>
+            <a href="tariffs.html" class="tariff-link">Тарифы</a>
+            <a href="history.html" class="tariff-link">История выплат</a>
+        </div>
+
+        <div class="notifications-section">
+            <h3>Новости и акции</h3>
+            <div class="notifications-list">
+                <div class="notification-item">
+                    <div class="notification-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#ff9500" stroke-width="2"/>
+                            <path d="M12 6v6l4 2" stroke="#ff9500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="notification-content">
+                        <h4>Новая акция! Пригласите друга и получите бонус</h4>
+                        <p>Пригласите друга до конца месяца и получите дополнительно 500₽ к первой выплате!</p>
+                        <span class="notification-date">Сегодня, 14:30</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#34c759" stroke-width="2"/>
+                            <path d="M9 12l2 2 4-4" stroke="#34c759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="notification-content">
+                        <h4>Выплата отправлена</h4>
+                        <p>Ваша выплата на сумму 2,500₽ успешно отправлена на карту.</p>
+                        <span class="notification-date">Вчера, 16:45</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#0071e3" stroke-width="2"/>
+                            <path d="M12 2v20M2 12h20" stroke="#0071e3" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="notification-content">
+                        <h4>Обновление системы</h4>
+                        <p>Мы обновили систему выплат. Теперь они обрабатываются быстрее!</p>
+                        <span class="notification-date">2 дня назад</span>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#ff3b30" stroke-width="2"/>
+                            <path d="M12 8v4M12 16h.01" stroke="#ff3b30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="notification-content">
+                        <h4>Важное уведомление</h4>
+                        <p>В связи с техническими работами выплаты могут задерживаться на 1-2 часа.</p>
+                        <span class="notification-date">3 дня назад</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-notifications" style="display: none;">
+            <div class="empty-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="#6e6e73" stroke-width="1.5"/>
+                    <path d="M12 6v6l4 2" stroke="#6e6e73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3>Нет новых уведомлений</h3>
+            <p>Здесь будут появляться важные новости и акции</p>
+        </div>
+    </div>
+
+    <script src="notifications.js"></script>
+</body>
+</html> 

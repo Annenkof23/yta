@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>История выплат</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>История выплат</h1>
+        <a href="index.html" class="tariff-link" style="display:block;text-align:center;margin-bottom:16px;color:var(--accent);font-weight:600;text-decoration:underline;">Назад в личный кабинет</a>
+        <div id="history-summary" style="background:#e0f7ef;padding:14px 0 10px 0;border-radius:18px;text-align:center;font-weight:700;color:var(--primary);margin-bottom:18px;">Всего выплачено: — ₽</div>
+        <div class="table-section">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ФИО</th>
+                            <th>Сумма выплат</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table">
+                        <!-- Данные будут добавлены через history.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="history.js"></script>
+</body>
+</html> 

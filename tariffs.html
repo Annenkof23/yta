@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тарифы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тарифы</h1>
+        <a href="index.html" class="tariff-link" style="display:block;text-align:center;margin-bottom:16px;color:var(--accent);font-weight:600;text-decoration:underline;">Назад в личный кабинет</a>
+        <input type="text" id="tariff-search" placeholder="Поиск по городу..." style="width:100%;max-width:320px;display:block;margin:0 auto 18px auto;padding:10px 14px;border-radius:12px;border:1.5px solid #d1fae5;font-size:1rem;">
+        <div class="table-section">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Город</th>
+                            <th>Сумма выплат</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tariffs-table">
+                        <!-- Данные будут добавлены через tariffs.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="tariffs.js"></script>
+</body>
+</html> 
